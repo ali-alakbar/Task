@@ -1,0 +1,446 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+}
+
+.headerClass {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.underHeaderClass {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+Nightmode */
+
+.nightmode {
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+}
+
+.icon-moon-o:hover {
+  cursor: pointer;
+  font-size: 27px;
+  transition: all 500ms;
+}
+
+.dark {
+  /* background: rgba(0, 0, 0, 0.74); */
+  background-color: #121111;
+}
+.dark .taskContainer ,.dark form {
+  background: rgba(255, 255, 255, 0.274);
+  box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark .headerClass,
+.dark .underHeaderClass {
+
+    color: rgb(209, 209, 209);
+
+  /* text-shadow: 2px 2px 5px rgba(230, 230, 230, 0.37); */
+    text-shadow: 1px 1px 2px  rgba(230, 230, 230, 0.37), 0 0 5px  rgba(230, 230, 230, 0.37), 0 0 5px rgb(195, 195, 195);
+
+    transition: all 2000ms;
+
+}
+
+
+
+.dark .headersCont:hover .headerClass,
+.dark .headersCont:hover .underHeaderClass {
+
+}
+
+.dark .task p{
+    color: black;
+}
+.dark .task:hover p{
+color: black;
+text-shadow: 1px 1px 2px 
+rgba(230, 230, 230, 0.37), 0 0 25px  
+rgba(230, 230, 230, 0.37), 
+0 0 5px rgb(42, 42, 42);
+
+}
+
+
+
+
+.dark .task {
+  color: rgba(18, 17, 17, 1);
+  font-family: sans-serif;
+  background: rgb(138, 138, 138);
+  box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+  width: 80%;
+  height: 40px;
+  /* position: relative; */
+  /* top: 120px; */
+  /* margin: 10px 0; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.dark .icon-moon-o{
+  color: rgb(177, 177, 177);
+
+}
+
+.dark .clear {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  color: rgba(18, 17, 17, 1);
+  font-family: sans-serif;
+  background: rgb(138, 138, 138);
+  box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgb(138, 138, 138);
+}
+
+.dark .clearbtn {
+  width: 80px;
+  height: 35px;
+  color: rgba(18, 17, 17, 1);
+  font-family: sans-serif;
+  background: rgb(138, 138, 138);
+  box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgb(138, 138, 138);
+
+
+
+}
+
+.dark .clearbtn:hover{
+color: black;
+text-shadow: 1px 1px 2px 
+rgba(230, 230, 230, 0.37), 0 0 25px  
+rgba(230, 230, 230, 0.37), 
+0 0 5px rgb(42, 42, 42);
+
+}
+
+
+
+.dark input{
+
+    color: rgba(18, 17, 17, 1);
+    font-family: sans-serif;
+    background: rgb(138, 138, 138);
+    box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(138, 138, 138);
+    height: 35px;
+    border-radius: 5px;
+
+   
+
+}
+
+
+
+
+
+
+
+.dark .form-h3{
+  color: rgb(209, 209, 209);
+  text-shadow: 2px 2px 5px rgba(230, 230, 230, 0.37);
+  text-shadow: 1px 1px 2px rgba(94, 94, 94, 0.37), 0 0 5px rgba(230, 230, 230, 0.37), 0 0 5px rgb(195, 195, 195);
+  transition: all 2000ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+Stylling the tasks container */
+
+
+
+.taskContainer {
+  position: relative;
+  margin-top: 100px;
+  padding: 100px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+/* =====================================
+Stylling the tasks container */
+
+
+
+
+/* Stylling clear tasks
+====================================== */
+
+.clear {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+
+  background-color: black;
+  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.clearbtn {
+  width: 80px;
+  height: 35px;
+  color: lightgray;
+  font-family: sans-serif;
+  background: rgba(18, 17, 17, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.clearbtn:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 400ms;
+}
+
+/* Stylling clear tasks
+====================================== */
+
+
+
+
+
+
+/* Start Styling the divs that will be showing the tasks */
+.task {
+  color: lightgray;
+  font-family: sans-serif;
+  background: rgba(18, 17, 17, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task_para {
+  color: rgb(207, 207, 207);
+}
+.trashdAndheart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task:hover .task_para {
+  color: white;
+  transition: all 300ms;
+}
+
+a,
+.task div,
+.task_para {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.icon-star,
+.icon-check,
+.icon-sad2,
+.icon-star-o {
+  padding: 9px;
+}
+
+.star,
+.starBold,
+.Check,
+.sad{
+  display: none;
+}
+
+
+.icon-star:hover,
+#starThin:hover,
+.icon-check:hover,
+.icon-trash-o:hover,
+.icon-sad2:hover{
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  transition: all 500ms;
+}
+
+.icon-check{
+  color: green;
+}
+.icon-star:hover {
+  color: darkorange;
+}
+
+
+
+/* End Styling the task divs that will be showing  */
+
+/* Start Stylling the text and form */
+
+form {
+  margin-top: 100px;
+  padding: 100px;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+}
+
+form .form-content{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-between;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+}
+
+
+form .form-content input {
+  height: 30px;
+  border-radius: 5px;
+  border: solid white;
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+}
+
+form .form-content .icon-cloud-upload {
+  font-size: 26px;
+  margin: 0 auto;
+
+  color: rgba(18, 17, 17, 1);
+}
+
+form .form-content .icon-cloud-upload:hover {
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+
+
+
+
+
+
+/* Start Style <h3> That Will Be Showing Above that text*/
+
+
+.form-h3{
+
+  color: #121111;
+  font-family: sans-serif;
+  position: absolute;
+  display: block;
+
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%,-50%);
+  display: none;
+  font-size: medium;
+  font-weight: lighter;
+
+
+}
+
+
+.Show-h3{
+  display: block;
+}
+/* End Style <h3> That Will Be Showing Above that text*/
+
+
+
+
+/* End Stylling the text and  form */
