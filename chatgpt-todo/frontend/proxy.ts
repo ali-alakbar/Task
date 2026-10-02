@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname.startsWith("/api/mcp")) return NextResponse.next();
+  if (request.nextUrl.pathname === "/health" || request.nextUrl.pathname.startsWith("/api/mcp")) return NextResponse.next();
 
   const user = process.env.DASHBOARD_USER;
   const pass = process.env.DASHBOARD_PASSWORD;
