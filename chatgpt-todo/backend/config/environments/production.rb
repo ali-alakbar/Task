@@ -8,4 +8,5 @@ Rails.application.configure do
   config.logger = ActiveSupport::TaggedLogging.logger($stdout)
   config.active_support.report_deprecations = false
   config.active_record.dump_schema_after_migration = false
+  config.active_storage.service = :local
 end
